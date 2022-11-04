@@ -11,6 +11,7 @@ export default function App() {
         <div className="App">
           <Search />
           <MainVisual />
+
           <Forecast />
           <Footer />
         </div>
