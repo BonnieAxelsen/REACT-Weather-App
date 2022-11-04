@@ -6,15 +6,15 @@ import Footer from "./Footer";
 
 export default function App() {
   return (
-    <div className="App">
-      <div className="body">
-        <div className="container-fluid">
+    <body>
+      <div className="container">
+        <div className="App">
           <Search />
           <MainVisual />
           <Forecast />
           <Footer />
         </div>
       </div>
-    </div>
+    </body>
   );
 }

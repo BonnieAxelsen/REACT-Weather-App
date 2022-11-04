@@ -3,9 +3,15 @@ import React from "react";
 
 export default function Search() {
   return (
-    <div className="Search">
+    <div className="search">
       <form>
-        <input type="search" placeholder="Type a city" />
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Search city"
+          autocomplete="off"
+          autofocus="on"
+        />
         <input type="submit" value="Search" />
       </form>
     </div>
