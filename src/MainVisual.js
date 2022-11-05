@@ -1,7 +1,5 @@
 import "./styles.css";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import MainImage from "./01n.svg";
 
 export default function MainVisual() {
@@ -9,10 +7,7 @@ export default function MainVisual() {
     <div className="main-visual">
       <div className="heading">
         <h4>
-          <span className="country">
-            <FontAwesomeIcon icon={faLocationDot} />
-            &nbsp;COPENHAGEN,
-          </span>
+          <span className="country">COPENHAGEN,</span>
           <span className="country-code"> DK</span>
         </h4>
         <div className="date">
