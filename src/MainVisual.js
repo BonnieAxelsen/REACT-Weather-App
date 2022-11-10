@@ -1,5 +1,6 @@
-import "./styles.css";
 import React from "react";
+import "./css/styles.css";
+import "./css/mainvisual.css";
 import MainImage from "./01n.svg";
 
 export default function MainVisual() {

@@ -1,5 +1,6 @@
-import "./styles.css";
 import React from "react";
+import "./css/styles.css";
+import "./css/forecast.css";
 import MainImage from "./01n.svg";
 
 export default function Forecast() {

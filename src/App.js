@@ -1,21 +1,18 @@
-import "./styles.css";
-import Search from "./Search";
+import "./css/styles.css";
+import Weather from "./Weather";
 import MainVisual from "./MainVisual";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
 export default function App() {
   return (
-    <body>
-      <div className="container">
-        <div className="App">
-          <Search />
-          <MainVisual />
-
-          <Forecast />
-          <Footer />
-        </div>
+    <div className="container">
+      <div className="App">
+        <Weather />
+        <MainVisual />
+        <Forecast />
+        <Footer />
       </div>
-    </body>
+    </div>
   );
 }

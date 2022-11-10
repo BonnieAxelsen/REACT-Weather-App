@@ -1,9 +1,10 @@
-import "./styles.css";
 import React from "react";
+import "./css/styles.css";
+import "./css/footer.css";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <footer>
       <p>
         <a
           href="https://github.com/BonnieAxelsen/REACT-Weather-App"
@@ -14,6 +15,6 @@ export default function Footer() {
         </a>
         by Bonnie Hill - hosted on Netlify
       </p>
-    </div>
+    </footer>
   );
 }
