@@ -1,15 +1,24 @@
-.main-visual {
+.weather-info {
   background-color: var(--secondary-color);
 
   text-align: left;
   padding: 0.5rem 0rem 1rem 2rem;
 }
 
+.city {
+  text-transform: uppercase;
+}
+
+.country {
+  font-variant-caps: all-small-caps;
+  color: var(--primary-color);
+}
+
 .image {
   margin: 1rem 0rem;
 }
 
-.main-visual .circle {
+.weather-info .circle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -19,11 +28,11 @@
   border-radius: 12rem;
 }
 
-.main-visual .main-image {
+.weather-info .main-image {
   width: 7rem;
   margin: 0 auto;
 }
 
-.main-visual .degrees {
+.weather-info .degrees {
   font-size: 60px;
 }
