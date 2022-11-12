@@ -1,8 +1,7 @@
 .weather-info {
   background-color: var(--secondary-color);
-
   text-align: left;
-  padding: 0.5rem 0rem 1rem 2rem;
+  padding: 0.5rem 1rem 1rem 2rem;
 }
 
 .city {
@@ -34,5 +33,5 @@
 }
 
 .weather-info .degrees {
-  font-size: 60px;
+  font-variant-caps: all-small-caps;
 }

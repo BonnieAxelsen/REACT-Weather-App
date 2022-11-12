@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/styles.css";
 import "./css/forecast.css";
-import MainImage from "./01n.svg";
+import MainImage from "./images/rain-day.svg";
 
 export default function Forecast() {
   return (

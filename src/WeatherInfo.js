@@ -1,8 +1,8 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 import "./css/styles.css";
 import "./css/weatherinfo.css";
-import MainImage from "./01n.svg";
 
 export default function WeatherInfo(props) {
   return (
@@ -22,7 +22,9 @@ export default function WeatherInfo(props) {
         </div>
         <div className="image">
           <div className="circle">
-            <img src={MainImage} alt="" className="main-image" />
+            <div className="main-image">
+              <WeatherIcon icon={props.icon} alt={props.weatherDescription} />
+            </div>
           </div>
         </div>
         <div className="temperature">
