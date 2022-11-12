@@ -1,7 +1,6 @@
 import React from "react";
 import "./css/styles.css";
 import "./css/forecast.css";
-import MainImage from "./images/rain-day.svg";
 
 export default function Forecast() {
   return (
@@ -11,7 +10,7 @@ export default function Forecast() {
       <div className="row forecast-row">
         <div className="col">
           <p>thu</p>
-          <img src={MainImage} alt="" className="forecast-image" />
+          <img src="/images/rain-day.svg" alt="" className="forecast-image" />
           <h5>
             <span className="min-temp"> 9°</span>
             <span className="max-temp"> 12°</span>
@@ -19,7 +18,7 @@ export default function Forecast() {
         </div>
         <div className="col">
           <p>thu</p>
-          <img src={MainImage} alt="" className="forecast-image" />
+          <img src="/images/rain-day.svg" alt="" className="forecast-image" />
           <h5>
             <span className="min-temp"> 9°</span>
             <span className="max-temp"> 12°</span>
@@ -27,7 +26,7 @@ export default function Forecast() {
         </div>
         <div className="col">
           <p>thu</p>
-          <img src={MainImage} alt="" className="forecast-image" />
+          <img src="/images/rain-day.svg" alt="" className="forecast-image" />
           <h5>
             <span className="min-temp"> 9°</span>
             <span className="max-temp"> 12°</span>
@@ -35,7 +34,7 @@ export default function Forecast() {
         </div>
         <div className="col">
           <p>thu</p>
-          <img src={MainImage} alt="" className="forecast-image" />
+          <img src="/images/rain-day.svg" alt="" className="forecast-image" />
           <h5>
             <span className="min-temp"> 9°</span>
             <span className="max-temp"> 12°</span>
@@ -43,7 +42,7 @@ export default function Forecast() {
         </div>
         <div className="col">
           <p>thu</p>
-          <img src={MainImage} alt="" className="forecast-image" />
+          <img src="/images/rain-day.svg" alt="" className="forecast-image" />
           <h5>
             <span className="min-temp"> 9°</span>
             <span className="max-temp"> 12°</span>

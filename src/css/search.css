@@ -3,12 +3,20 @@
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-right: 10rem;
+  padding-right: 9rem;
   opacity: 0.5;
 }
 
 .search .btn {
   background-color: var(--background-color);
+}
+
+.search .btn:hover {
+  color: var(--primary-color);
+}
+
+.search .btn:active {
+  border-color: transparent;
 }
 
 input,
@@ -20,5 +28,10 @@ input,
   border: none;
   background-color: var(--background-color);
   font-size: 11px;
-  color: #f01d7f;
+  color: var(--primary-color);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(240, 29, 127, 0.2);
 }

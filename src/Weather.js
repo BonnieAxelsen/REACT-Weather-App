@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { SpinnerRoundFilled } from "spinners-react";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
 import "./css/styles.css";
 import "./css/search.css";
+import "./css/loading.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -62,10 +67,18 @@ export default function Weather(props) {
           </form>
         </div>
         <WeatherInfo data={weatherData} />
+        <Forecast />
+        <Footer />
       </div>
     );
   } else {
     search();
-    return "Loading..";
+    return (
+      <div className="loading">
+        <div className="loading-spinner ">
+          <SpinnerRoundFilled color="#f01d7f" size="75%" />
+        </div>
+      </div>
+    );
   }
 }

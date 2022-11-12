@@ -19,42 +19,32 @@ input {
   font-weight: lighter;
 }
 
-h1,
-.country-code,
-.min-temp,
-.max-temp {
-  color: var(--primary-color);
-  line-height: 0.8em;
-}
-
 h2,
 h3,
 h4,
-h5,
-a {
+h5 {
   color: var(--background-color);
-  text-decoration: none;
+  margin: 0px;
 }
 
-p,
-.min-temp {
+p {
   color: var(--tertiary-color);
+  text-align: center;
 }
 
 h1 {
   font-size: 75px;
-  margin: 0px;
+  color: var(--primary-color);
+  line-height: 0.8em;
 }
 
 h2 {
   font-size: 30px;
-  margin: 0px;
   letter-spacing: 0.1em;
 }
 
 h4 {
   font-size: 22px;
-  margin: 0px;
   letter-spacing: 0.1em;
 }
 
@@ -65,6 +55,12 @@ p {
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .container {

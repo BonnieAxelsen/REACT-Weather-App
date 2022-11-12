@@ -24,3 +24,12 @@
   width: 2em;
   padding: 0.5rem 0;
 }
+
+.min-temp {
+  color: var(--tertiary-color);
+}
+
+.max-temp {
+  color: var(--primary-color);
+  line-height: 0.8em;
+}
