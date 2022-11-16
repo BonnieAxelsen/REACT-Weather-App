@@ -36,7 +36,6 @@ export default function WeatherInfo(props) {
         </div>
       </div>
       <div className="daily-conditions">
-        <hr></hr>
         <div className="row">
           <div className="col">
             <div>Feels like</div>
