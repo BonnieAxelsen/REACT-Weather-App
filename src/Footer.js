@@ -5,6 +5,7 @@ import "./css/footer.css";
 export default function Footer() {
   return (
     <footer>
+      <hr></hr>
       <p>
         <a
           href="https://github.com/BonnieAxelsen/REACT-Weather-App"

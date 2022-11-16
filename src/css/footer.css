@@ -1,4 +1,8 @@
 footer {
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 0rem 1.5rem;
   background-color: var(--background-color);
+}
+
+footer p {
+  padding-top: 0.5rem;
 }

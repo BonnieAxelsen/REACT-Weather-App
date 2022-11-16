@@ -20,6 +20,7 @@ export default function Forecast(props) {
     return (
       <div className="forecast">
         <hr></hr>
+
         <div className="row forecast-row">
           {forecast.map(function (day, index) {
             if (index < 5) {
