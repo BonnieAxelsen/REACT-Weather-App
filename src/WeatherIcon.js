@@ -24,11 +24,7 @@ export default function WeatherIcon(props) {
 
   return (
     <div className="WeatherIcon">
-      <img
-        src={codeMapping[props.icon]}
-        alt="weather-icon"
-        className="main-image"
-      />
+      <img src={codeMapping[props.icon]} alt="weather-icon" />
     </div>
   );
 }

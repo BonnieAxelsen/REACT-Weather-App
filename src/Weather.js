@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { SpinnerRoundFilled } from "spinners-react";
 import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
-import "./css/styles.css";
 import "./css/search.css";
 import "./css/loading.css";
-
+import { SpinnerRoundFilled } from "spinners-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,6 +16,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coordinates,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time * 1000),
@@ -29,13 +28,6 @@ export default function Weather(props) {
     });
   }
 
-  function search() {
-    const apiKey = "10ad860c34aof77451t194e7bc2b34fc";
-    let units = "metric";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
-    axios.get(apiUrl).then(handleResponse);
-  }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -43,6 +35,14 @@ export default function Weather(props) {
 
   function handleCityUpdate(event) {
     setCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = "10ad860c34aof77451t194e7bc2b34fc";
+    let units = "metric";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+
+    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
@@ -67,7 +67,10 @@ export default function Weather(props) {
           </form>
         </div>
         <WeatherInfo data={weatherData} />
-        <Forecast />
+        <Forecast
+          coordinates={weatherData.coordinates}
+          city={weatherData.city}
+        />
         <Footer />
       </div>
     );

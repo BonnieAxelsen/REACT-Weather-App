@@ -1,9 +1,3 @@
-.weather-info {
-  background-color: var(--secondary-color);
-  text-align: left;
-  padding: 0.5rem 1rem 1rem 2rem;
-}
-
 .city {
   text-transform: uppercase;
 }
@@ -14,7 +8,13 @@
 }
 
 .image {
-  margin: 1rem 0rem;
+  margin: 1rem 0;
+}
+
+.weather-info {
+  background-color: var(--secondary-color);
+  text-align: left;
+  padding: 0rem 1rem 1rem 2rem;
 }
 
 .weather-info .circle {
@@ -27,7 +27,7 @@
   border-radius: 12rem;
 }
 
-.weather-info .main-image {
+.weather-info img {
   width: 7rem;
   margin: 0 auto;
 }
