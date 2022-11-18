@@ -81,7 +81,7 @@ export default function Weather(props) {
     return (
       <div className="loading">
         <div className="loading-spinner ">
-          <SpinnerRoundFilled color="#f01d7f" size="75%" />
+          <SpinnerRoundFilled color="#9eb0ca" size="75%" />
         </div>
       </div>
     );

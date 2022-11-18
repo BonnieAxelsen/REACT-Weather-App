@@ -5,4 +5,5 @@ footer {
 
 footer p {
   padding-top: 0.5rem;
+  font-variant-caps: all-small-caps;
 }

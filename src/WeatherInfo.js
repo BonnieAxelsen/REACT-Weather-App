@@ -38,19 +38,26 @@ export default function WeatherInfo(props) {
       <div className="daily-conditions">
         <div className="row">
           <div className="col">
-            <div>Feels like</div>
+            <div>
+              <h5>Feels like</h5>
+            </div>
             <div>
               <h3>{Math.round(props.data.feels_like)}° C</h3>
             </div>
           </div>
           <div className="col">
-            <div>Humidity</div>
+            <div>
+              {" "}
+              <h5>Humidity</h5>
+            </div>
             <div>
               <h3>{props.data.humidity}%</h3>
             </div>
           </div>
           <div className="col">
-            <div>Wind</div>
+            <div>
+              <h5>Wind</h5>
+            </div>
             <div>
               <h3>{props.data.wind} km/h</h3>
             </div>

@@ -7,6 +7,10 @@
   opacity: 0.5;
 }
 
+.search .btn {
+  color: var(--secondary-color);
+}
+
 .search .btn:hover {
   color: var(--primary-color);
   background-color: var(--background-color);
@@ -35,7 +39,7 @@ input,
 
 .form-control:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(240, 29, 127, 0.2);
+  box-shadow: 0 0 0 0.2rem rgba(169, 190, 220, 0.5);
 }
 
 @media screen and (max-width: 820px) {
